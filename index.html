@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>BUND</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="cartographie" content="Martin Paatsch">
+  <meta name="author" content="BUND Dresden">
+  <meta name="description" content="interaktive Karten zu pestizidfreien Kommunen in Sachsen">
+  <meta content="pittymaps -   pestizidfreie Kommunen in Sachsen
+        interaktive Karten zu den pestizidfreien Gemeinden in Sachsen" property="og:title">
+  <meta content="Diese Karte zeigt die jeweilige Kommunen in Sachsen, welche auf Pestizide verzichten, ebenso welche noch den Einsatz von Pestiziden erlauben.
+  Diese Karte wurde von Martin Paatsch erstellt, GIS-Webentwicklungsingenieur in Dresden. Die Sachdaten wurden vom BUND Dresden hinzugefügt.">
+  <meta content="map, Sachsen, pestizidfreie, , Umweltgifte, pestizidfreie Kommune,
+      Deutschland, Germany, Saxony, Glyphosat, Wildkrautbewuchs, 2018">
+
+
+
+  <!--jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <!-- Leaflet- -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+ integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+ crossorigin=""></script>
+
+ <!-- Markercluster -->
+ <link rel="stylesheet" href="./scripts/Leaflet.markercluster-1.3.0/dist/MarkerCluster.css" />
+ <link rel="stylesheet" href="./scripts/Leaflet.markercluster-1.3.0/dist/MarkerCluster.Default.css" />
+ <script src="./scripts/Leaflet.markercluster-1.3.0/dist/leaflet.markercluster-src.js"></script>
+
+ <!--Leaflet-sidebar -->
+ <link rel="stylesheet" href="./scripts/leaflet-sidebar-master/src/L.Control.Sidebar.css" />
+ <script src ="./scripts/leaflet-sidebar-master/src/L.Control.Sidebar.js" /></script>
+
+
+
+<!--Leaflet-search -->
+<script src ="./scripts/search/leaflet-search-master/src/leaflet-search.js"></script>
+<link rel="stylesheet" href="./scripts/search/leaflet-search-master/src/leaflet-search.css" />
+
+<!--Leaflet-extra-marker -->
+<link rel="stylesheet" href="./scripts/Leaflet.ExtraMarkers-master/Leaflet.ExtraMarkers-master/dist/css/leaflet.extra-markers.min.css" />
+<script src ="./scripts/Leaflet.ExtraMarkers-master/Leaflet.ExtraMarkers-master/dist/js/leaflet.extra-markers.min.js"/></script>
+
+<link rel="stylesheet" href="./scripts/mycss.css" />
+
+
+</head>
+
+  <body>
+    <div id="sidebar">
+      <h1>leaflet-sidebar</h1>
+      <p> </p>
+    </div>
+    <div id="map"></div>
+
+  <script src = "./scripts/mapscript.min.js"></script>
+
+
+
+
+  </body>
+</html>
